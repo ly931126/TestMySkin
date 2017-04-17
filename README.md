@@ -1,7 +1,11 @@
 通过第三方框架实现换肤
 -----------
-换肤效果图如下所示：
-<img src="skin.gif" width="320px"/>
+- 换肤效果图如下所示：
+---
+<img src="skin.gif" width="500px"/>
+
+---
+- 注：[参考链接](http://blog.csdn.net/u013478336/article/details/53083054)
 ### 1.首先导入第三方框架QSkinLoaderlib,并添加依赖
 ### 2. 定义BaseActivity，重写Activity生命周期方法和onWindowFocusChange（），在onCreate（）中初始化IActivitySkinEventHandler对象，用这个对象在生命周期和onWindowFocusChange（）当中调用相对应的方法。需要具有换肤功能的Activity必须继承BaseActivity。
 ### 3.BaseActivity必须实现框架中的 ISkinActivity接口，重写其中三个方法isSupportSkinChange() ，isSwitchSkinImmediately()，handleSkinChange()方法。
